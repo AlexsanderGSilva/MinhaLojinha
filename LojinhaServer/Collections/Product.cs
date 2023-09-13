@@ -37,6 +37,6 @@ public class Product
     public List<string> Tags { get; set; }
 
     [BsonElement("brand")]
-    [JsonPropertyName("Marca")]
+    [JsonPropertyName("Editora")]
     public string Brand { get; set; }
 }
