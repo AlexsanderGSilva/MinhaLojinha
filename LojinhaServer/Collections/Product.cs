@@ -11,32 +11,32 @@ public class Product
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-    
     public string Id { get; set; }
 
     [BsonElement("name")]
     [JsonPropertyName("Nome")]
-
     public string Name { get; set; }
 
-    [BsonElement("Description")]
+    [BsonElement("description")]
     [JsonPropertyName("Descrição")]
-
     public string Description { get; set; }
 
     [BsonElement("price")]
     [JsonPropertyName("Preço")]
-
     public decimal Price { get; set; }
 
     [BsonElement("offprice")]
     [JsonPropertyName("Promoção")]
-
     public decimal Offprice { get; set; }
 
     [BsonElement("categories")]
     [JsonPropertyName("Categorias")]
-
     public List<string> Categories { get; set; }
 
+    [BsonElement("tags")]
+    public List<string> Tags { get; set; }
+
+    [BsonElement("brand")]
+    [JsonPropertyName("Marca")]
+    public string Brand { get; set; }
 }
